@@ -6,7 +6,7 @@
   <link href="http://zhao4777.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhao4777.github.io/"/>
-  <updated>2023-10-20T13:10:03.162Z</updated>
+  <updated>2023-10-20T13:13:56.584Z</updated>
   <id>http://zhao4777.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web_CSS</title>
+    <link href="http://zhao4777.github.io/2023/10/20/web-css.float/"/>
+    <id>http://zhao4777.github.io/2023/10/20/web-css.float/</id>
+    <published>2023-10-20T13:11:22.000Z</published>
+    <updated>2023-10-20T13:13:56.584Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h1&gt;&lt;h2 id=&quot;1-CSS基础&quot;&gt;&lt;a href=&quot;#1-CSS基础&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="http://zhao4777.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Web" scheme="http://zhao4777.github.io/tags/Web/"/>
+    
+    <category term="CSS" scheme="http://zhao4777.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Web_html+css初入门</title>
@@ -39,9 +66,9 @@
     
     <category term="Web" scheme="http://zhao4777.github.io/tags/Web/"/>
     
-    <category term="HTML" scheme="http://zhao4777.github.io/tags/HTML/"/>
-    
     <category term="CSS" scheme="http://zhao4777.github.io/tags/CSS/"/>
+    
+    <category term="HTML" scheme="http://zhao4777.github.io/tags/HTML/"/>
     
   </entry>
   
