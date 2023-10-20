@@ -29,8 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="47‘s Blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="47‘s Blog" type="application/atom+xml">
+</head>
 
 
 
@@ -362,20 +362,38 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/Web/" title="Web: 2">
+                <a href="/tags/Web/" title="Web: 5">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="Web" style="background-color: #F9EBEA;">Web
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/JavaScript/" title="JavaScript: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="JavaScript" style="background-color: #F5EEF8;">JavaScript
                         <span class="tag-length">2</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/CSS/" title="CSS: 2">
+                <a href="/tags/Web-APIs/" title="Web APIs: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="CSS" style="background-color: #F5EEF8;">CSS
-                        <span class="tag-length">2</span>
+                            data-tagname="Web APIs" style="background-color: #D5F5E3;">Web APIs
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/CSS/" title="CSS: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="CSS" style="background-color: #E8F8F5;">CSS
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -383,7 +401,7 @@
                 <a href="/tags/HTML/" title="HTML: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="HTML" style="background-color: #D5F5E3;">HTML
+                            data-tagname="HTML" style="background-color: #FEF9E7;">HTML
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -412,7 +430,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"Web","weight":2,"link":"/tags/Web/"},{"text":"CSS","weight":2,"link":"/tags/CSS/"},{"text":"HTML","weight":1,"link":"/tags/HTML/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"Web","weight":5,"link":"/tags/Web/"},{"text":"JavaScript","weight":2,"link":"/tags/JavaScript/"},{"text":"Web APIs","weight":1,"link":"/tags/Web-APIs/"},{"text":"CSS","weight":3,"link":"/tags/CSS/"},{"text":"HTML","weight":1,"link":"/tags/HTML/"}], {
         autoResize: true
     });
 </script>
@@ -478,7 +496,7 @@
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -489,6 +507,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">19k</span>&nbsp;字
             
             
             
@@ -507,6 +528,50 @@
             </span>
             
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2023";
+                    var startMonth = "10";
+                    var startDate = "20";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
