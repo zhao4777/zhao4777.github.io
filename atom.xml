@@ -6,7 +6,7 @@
   <link href="http://zhao4777.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhao4777.github.io/"/>
-  <updated>2023-10-20T11:50:25.323Z</updated>
+  <updated>2023-10-20T12:59:51.262Z</updated>
   <id>http://zhao4777.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web_html+css初入门</title>
+    <link href="http://zhao4777.github.io/2023/10/20/web-html-css-chu-ru-men/"/>
+    <id>http://zhao4777.github.io/2023/10/20/web-html-css-chu-ru-men/</id>
+    <published>2023-10-20T12:50:54.000Z</published>
+    <updated>2023-10-20T12:59:51.262Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;记录前端学习历程——studyBlog1&lt;/p&gt;
+&lt;h1 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Web" scheme="http://zhao4777.github.io/tags/Web/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
