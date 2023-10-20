@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>47‘s Blog</title>
   
   
   <link href="http://zhao4777.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhao4777.github.io/"/>
-  <updated>2023-10-20T12:59:51.262Z</updated>
+  <updated>2023-10-20T13:10:03.162Z</updated>
   <id>http://zhao4777.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>z47</name>
     
   </author>
   
@@ -21,22 +21,27 @@
     <link href="http://zhao4777.github.io/2023/10/20/web-html-css-chu-ru-men/"/>
     <id>http://zhao4777.github.io/2023/10/20/web-html-css-chu-ru-men/</id>
     <published>2023-10-20T12:50:54.000Z</published>
-    <updated>2023-10-20T12:59:51.262Z</updated>
+    <updated>2023-10-20T13:10:03.162Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;记录前端学习历程——studyBlog1&lt;/p&gt;
-&lt;h1 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
+    
+    <category term="Markdown" scheme="http://zhao4777.github.io/categories/Markdown/"/>
     
     
     <category term="Web" scheme="http://zhao4777.github.io/tags/Web/"/>
+    
+    <category term="HTML" scheme="http://zhao4777.github.io/tags/HTML/"/>
+    
+    <category term="CSS" scheme="http://zhao4777.github.io/tags/CSS/"/>
     
   </entry>
   
