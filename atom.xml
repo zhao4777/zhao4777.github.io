@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>47‘s Blog</title>
   
-  
+  <subtitle>this is a new subtitle</subtitle>
   <link href="http://zhao4777.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhao4777.github.io/"/>
