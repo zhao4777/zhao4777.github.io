@@ -6,7 +6,7 @@
   <link href="http://zhao4777.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhao4777.github.io/"/>
-  <updated>2023-10-22T07:33:03.126Z</updated>
+  <updated>2023-10-22T07:54:46.795Z</updated>
   <id>http://zhao4777.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>mongodb_study_1</title>
+    <title>MongoDB_study_1</title>
     <link href="http://zhao4777.github.io/2023/10/22/mongodb-study-1/"/>
     <id>http://zhao4777.github.io/2023/10/22/mongodb-study-1/</id>
-    <published>2023-10-22T07:31:02.000Z</published>
-    <updated>2023-10-22T07:33:03.126Z</updated>
+    <published>2023-10-22T07:48:15.000Z</published>
+    <updated>2023-10-22T07:54:46.795Z</updated>
     
     
       
@@ -171,27 +171,6 @@
     <category term="CSS" scheme="http://zhao4777.github.io/tags/CSS/"/>
     
     <category term="HTML" scheme="http://zhao4777.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://zhao4777.github.io/2023/10/20/hello-world/"/>
-    <id>http://zhao4777.github.io/2023/10/20/hello-world/</id>
-    <published>2023-10-20T11:50:25.323Z</published>
-    <updated>2023-10-20T11:50:25.323Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

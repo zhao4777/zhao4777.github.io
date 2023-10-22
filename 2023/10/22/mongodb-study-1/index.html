@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mongodb_study_1, just keywords">
+    <meta name="keywords" content="MongoDB_study_1, just keywords">
     <meta name="description" content="just discription">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>mongodb_study_1 | 47‘s Blog</title>
+    <title>MongoDB_study_1 | 47‘s Blog</title>
     <link rel="icon" type="image/png" href="/favicon-cat.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">mongodb_study_1</h1>
+                    <h1 class="description center-align post-title">MongoDB_study_1</h1>
                 </div>
             </div>
         </div>
@@ -494,7 +494,7 @@ bin<span class="token operator">/</span>mongod <span class="token operator">--</
 #进入mongodb shell
 bin<span class="token operator">/</span>monogo
 </code></pre>
-<p><img src="E:\mongodb学习笔记\第一二个星期\图片\登录.png"></p>
+<p><img src="/2023/10/22/mongodb-study-1/.%5CMongoDB-study-1%5C%E7%99%BB%E5%BD%95.png"></p>
 <h4 id="1-1-2MongoDB-Server启动（方法2）"><a href="#1-1-2MongoDB-Server启动（方法2）" class="headerlink" title="1.1.2MongoDB Server启动（方法2）"></a>1.1.2MongoDB Server启动（方法2）</h4><pre class=" language-c"><code class="language-c">#登陆指令
 mongod <span class="token operator">-</span>f <span class="token operator">/</span>mongodb<span class="token operator">/</span>conf<span class="token operator">/</span>mongo<span class="token punctuation">.</span>conf
 #进入mongo shell
@@ -522,7 +522,7 @@ db<span class="token punctuation">.</span>emp<span class="token punctuation">.</
 <pre class=" language-c"><code class="language-c">#创建集合
 db<span class="token punctuation">.</span><span class="token function">crearteCollections</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
 </code></pre>
-<p>options参数为：<br><img src="E:/mongodb学习笔记/第一二个星期/图片/1.png" alt="图片"></p>
+<p>options参数为：<br><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记/第一二个星期/图片/1.png" alt="图片"></p>
 <h4 id="2-2安全认证"><a href="#2-2安全认证" class="headerlink" title="2.2安全认证"></a>2.2安全认证</h4><p>创建一个管理账户</p>
 <pre class=" language-c"><code class="language-c">#先切换到admin库
 use admin
@@ -570,7 +570,7 @@ db<span class="token punctuation">.</span>books<span class="token punctuation">.
 <span class="token comment" spellcheck="true">//&amp;#123;type:"novel",tag:"developer"&amp;#125;:查找type为novel和tag为developer的书；</span>
 <span class="token comment" spellcheck="true">//&amp;#123;title:1,author:1&amp;#125;：返回所查找的书的title和author</span>
 </code></pre>
-<p><img src="E:/mongodb学习笔记/第一二个星期/图片/2.png" alt="图片"><br>还可以只返回第一项</p>
+<p><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记/第一二个星期/图片/2.png" alt="图片"><br>还可以只返回第一项</p>
 <pre class=" language-c"><code class="language-c">db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>type<span class="token punctuation">:</span><span class="token string">"novel"</span><span class="token punctuation">,</span>tag<span class="token punctuation">:</span><span class="token string">"developer"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>title<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>author<span class="token punctuation">:</span><span class="token number">1</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
 </code></pre>
 <ul>
@@ -600,7 +600,7 @@ db<span class="token punctuation">.</span>books<span class="token punctuation">.
 <li>$or: 匹配两个或多个条件中的一个</li>
 <li>$and: 匹配全部条件</li>
 </ul>
-<p><strong>查找逻辑对照表</strong><br><img src="E:/mongodb学习笔记/第一二个星期/图片/4.png" alt="图片"></p>
+<p><strong>查找逻辑对照表</strong><br><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记/第一二个星期/图片/4.png" alt="图片"></p>
 <pre class=" language-c"><code class="language-c">例：db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>title<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>$in<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">"book-1"</span><span class="token punctuation">,</span><span class="token string">"book-2"</span><span class="token punctuation">]</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//查找title为book-1和book-2的书</span>
 #输出结果
@@ -640,7 +640,7 @@ db<span class="token punctuation">.</span>books<span class="token punctuation">.
 </ul>
 </li>
 </ul>
-<h5 id="1-更新操作符（update）"><a href="#1-更新操作符（update）" class="headerlink" title="1. 更新操作符（update）"></a>1. 更新操作符（update）</h5><p><img src="E:\mongodb学习笔记\第一二个星期\图片\更新操作符.png" alt="图片"></p>
+<h5 id="1-更新操作符（update）"><a href="#1-更新操作符（update）" class="headerlink" title="1. 更新操作符（update）"></a>1. 更新操作符（update）</h5><p><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记\第一二个星期\图片\更新操作符.png" alt="图片"></p>
 <blockquote>
 <p>例：要将id为63346fa3dd53a05e7a9084df的book的favCount加1</p>
 <pre class=" language-c"><code class="language-c">db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>_id<span class="token punctuation">:</span><span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">"63346fa3dd53a05e7a9084df"</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>$inc<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>favCount<span class="token punctuation">:</span><span class="token number">1</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
@@ -725,19 +725,19 @@ db<span class="token punctuation">.</span>books<span class="token punctuation">.
 </code></pre>
 </blockquote>
 <p>返回确认性信息为为：</p>
-<p><img src="E:\mongodb学习笔记\第一二个星期\图片\remove.png" alt="图片"></p>
+<p><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记\第一二个星期\图片\remove.png" alt="图片"></p>
 <h5 id="2-delete删除文档"><a href="#2-delete删除文档" class="headerlink" title="2. delete删除文档"></a>2. delete删除文档</h5><p>有deleteOne()和deleteMany()：</p>
 <pre class=" language-c"><code class="language-c">db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">deleteMany</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">//删除集合下所有文档（依然不建议）</span>
 db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">deleteMany</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>type<span class="token punctuation">:</span><span class="token string">"novel"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">//删除type为novel的所有文档</span>
 db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">deleteOne</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>type<span class="token punctuation">:</span><span class="token string">"novel"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">//删除type为novel的第一个文档</span>
 </code></pre>
 <p>返回确认性信息为为：</p>
-<p><img src="E:\mongodb学习笔记\第一二个星期\图片\delete.png" alt="图片"></p>
+<p><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记\第一二个星期\图片\delete.png" alt="图片"></p>
 <h5 id="3-返回被删除的文档"><a href="#3-返回被删除的文档" class="headerlink" title="3. 返回被删除的文档"></a>3. 返回被删除的文档</h5><p>若想获得被删除的文档的信息，用findOneAndDelete命令：</p>
 <pre class=" language-c"><code class="language-c">db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">findOneAndDelete</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>type<span class="token punctuation">:</span><span class="token string">"novel"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
 </code></pre>
 <p>返回为：</p>
-<p><img src="E:\mongodb学习笔记\第一二个星期\图片\findOneAndDelete.png" alt="图片"></p>
+<p><img src="/2023/10/22/mongodb-study-1/mongodb学习笔记\第一二个星期\图片\findOneAndDelete.png" alt="图片"></p>
 <p>若想按照指定顺序删除找到的第一个文档：</p>
 <pre class=" language-c"><code class="language-c">db<span class="token punctuation">.</span>books<span class="token punctuation">.</span><span class="token function">findOneAndDelete</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>type<span class="token punctuation">:</span><span class="token string">"novel"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>sort<span class="token punctuation">:</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>favCount<span class="token punctuation">:</span><span class="token number">1</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
 </code></pre>
@@ -859,15 +859,15 @@ db<span class="token punctuation">.</span>books<span class="token punctuation">.
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mongodb_study_1">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="MongoDB_study_1">
                         
-                        <span class="card-title">mongodb_study_1</span>
+                        <span class="card-title">MongoDB_study_1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本篇文章主要介绍MongoDB一些常见的入门命令
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -1143,7 +1143,7 @@ db<span class="token punctuation">.</span>books<span class="token punctuation">.
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.1k</span>&nbsp;字
+                class="white-color">21k</span>&nbsp;字
             
             
             
