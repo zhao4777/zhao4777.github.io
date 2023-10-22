@@ -30,6 +30,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="47‘s Blog" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -461,7 +463,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    1.6k
                 </div>
                 
 
@@ -534,14 +536,14 @@
 </li>
 </ul>
 <p><em>定位元素垂直方向的位置由<code>top</code>和<code>bottom</code>两个属性来控制，通常情况下我们只会使用其一（水平方向同理）</em></p>
-<pre class=" language-css"><code class="language-css"><span class="token number">.</span>box<span class="token number">2</span>&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
     <span class="token property">position</span><span class="token punctuation">:</span>relative<span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">/*开启定位*/</span>
     <span class="token property">top</span><span class="token punctuation">:</span>-<span class="token number">200</span>px<span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">/*先向上移动*/</span>
     <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>         <span class="token comment" spellcheck="true">/*再向右移动*/</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h3 id="1-2-绝对定位（absolute）"><a href="#1-2-绝对定位（absolute）" class="headerlink" title="1.2 绝对定位（absolute）"></a>1.2 绝对定位（absolute）</h3><blockquote>
 <p>当元素的position属性值设置为absolute时，则开启了元素的绝对定位</p>
@@ -583,7 +585,7 @@
 <ul>
 <li>粘滞定位可以在元素到达某个位置时将其固定</li>
 </ul>
-<pre class=" language-css"><code class="language-css"><span class="token number">.</span>nav&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.nav</span></span><span class="token punctuation">{</span>
     <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">1210</span>px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">48</span>px<span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#E8E7E3</span><span class="token punctuation">;</span>
@@ -591,13 +593,13 @@
     <span class="token comment" spellcheck="true">/* 粘滞定位 */</span>
     <span class="token property">position</span><span class="token punctuation">:</span> sticky<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">1</span>px<span class="token punctuation">;</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h3 id="1-5-绝对定位元素的位置"><a href="#1-5-绝对定位元素的位置" class="headerlink" title="1.5 绝对定位元素的位置"></a>1.5 绝对定位元素的位置</h3><blockquote>
-<p>**包含块的内容区宽度 &#x3D; **</p>
+<p>**包含块的内容区宽度 = **</p>
 <p><strong>left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right</strong></p>
-<p>**含块的高度 &#x3D; **</p>
-<p><strong>top + margin-top&#x2F;bottom + padding-top&#x2F;bottom  + border-top&#x2F;bottom + height</strong></p>
+<p>**含块的高度 = **</p>
+<p><strong>top + margin-top/bottom + padding-top/bottom  + border-top/bottom + height</strong></p>
 </blockquote>
 <p>当开启了绝对定位后，水平方向的布局等式就需要添加 left 和 right 两个值，此时规则与之前一样</p>
 <ul>
@@ -612,7 +614,7 @@
 </ul>
 </li>
 <li><p>因为 left 和 right 的默认值是auto，所以如果不知道 left 和 right ，则等式不满足时，会自动调整这两个值</p>
-<pre class=" language-css"><code class="language-css"><span class="token number">.</span>box<span class="token number">2</span>&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
@@ -622,11 +624,11 @@
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span> auto<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">left</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
-<li><p><strong>包含块的高度 &#x3D; top + margin-top&#x2F;bottom + padding-top&#x2F;bottom  + border-top&#x2F;bottom + height</strong></p>
-<pre class=" language-css"><code class="language-css"><span class="token number">.</span>box<span class="token number">2</span>&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+<li><p><strong>包含块的高度 = top + margin-top/bottom + padding-top/bottom  + border-top/bottom + height</strong></p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
@@ -637,11 +639,11 @@
     <span class="token property">bottom</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">margin-top</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
     <span class="token property">margin-bottom</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li><p>如果想要在正中心（既水平居中又垂直居中）</p>
-<pre class=" language-css"><code class="language-css"><span class="token number">.</span>box<span class="token number">2</span>&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
@@ -654,7 +656,7 @@
     <span class="token property">bottom</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token property">margin-top</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
     <span class="token property">margin-bottom</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 </ul>
@@ -692,9 +694,9 @@
 <p>font awesome使用步骤：</p>
 <ul>
 <li>将css和webfonts移动到项目中</li>
-<li>将all.css引入到网页中 <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./fa/css/all.css&quot;&gt;</code></li>
+<li>将all.css引入到网页中 <code>&lt;link rel="stylesheet" href="./fa/css/all.css"&gt;</code></li>
 <li>使用图标字体<ul>
-<li>直接通过类名使用图标字体 <code>  &lt;i class=&quot;fas fa-bell&quot;&gt;&lt;/i&gt;</code><ul>
+<li>直接通过类名使用图标字体 <code>  &lt;i class="fas fa-bell"&gt;&lt;/i&gt;</code><ul>
 <li><strong>其中<code>fas</code>是固定的（或者<code>fab</code>），后面的<code>fa-bell</code>是目标图标的类</strong></li>
 </ul>
 </li>
@@ -1109,7 +1111,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21k</span>&nbsp;字
+                class="white-color">20.3k</span>&nbsp;字
             
             
             
