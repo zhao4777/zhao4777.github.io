@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Web_CSS(position), just keywords">
+    <meta name="keywords" content="电商管理系统实战, just keywords">
     <meta name="description" content="just discription">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Web_CSS(position) | 47‘s Blog</title>
+    <title>电商管理系统实战 | 47‘s Blog</title>
     <link rel="icon" type="image/png" href="/favicon-cat.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Web_CSS(position)</h1>
+                    <h1 class="description center-align post-title">电商管理系统实战</h1>
                 </div>
             </div>
         </div>
@@ -438,8 +438,12 @@
                                 <span class="chip bg-color">Web</span>
                             </a>
                         
-                            <a href="/tags/CSS/">
-                                <span class="chip bg-color">CSS</span>
+                            <a href="/tags/Vue2-0/">
+                                <span class="chip bg-color">Vue2.0</span>
+                            </a>
+                        
+                            <a href="/tags/Element-UI/">
+                                <span class="chip bg-color">Element-UI</span>
                             </a>
                         
                     </div>
@@ -454,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-10-20
+                    2023-10-29
                 </div>
                 
 
@@ -463,14 +467,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    5 分
                 </div>
                 
 
@@ -485,224 +489,217 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><h2 id="1-定位（position）"><a href="#1-定位（position）" class="headerlink" title="1. 定位（position）"></a>1. 定位（position）</h2><blockquote>
-<p>定位（position）是一个更加高级的布局手段，通过定位，可以将元素摆放到页面的任意位置，使用<code>position</code>属性来设置定位</p>
+                <h1 id="电商管理系统搭建"><a href="#电商管理系统搭建" class="headerlink" title="电商管理系统搭建"></a>电商管理系统搭建</h1><blockquote>
+<p>这是出师未捷身先死的笔记😭</p>
 </blockquote>
-<p><code>position</code></p>
-<ul>
-<li>可选值：<ul>
-<li><code>static</code>  默认值，元素是静止的没有开启定位</li>
-<li><code>relative</code>  开启元素的相对定位</li>
-<li><code>absolute</code>  开启元素的绝对定位</li>
-<li><code>fixed</code>  开启元素的固定定位</li>
-<li><code>sticky</code>  开启元素的粘滞定位</li>
-</ul>
-</li>
-</ul>
-<h3 id="1-1-相对定位（relative）"><a href="#1-1-相对定位（relative）" class="headerlink" title="1.1 相对定位（relative）"></a>1.1 相对定位（relative）</h3><blockquote>
-<p>当元素的position属性值设置为relative时，则开启了元素的相对定位</p>
+<h2 id="环境准备部分"><a href="#环境准备部分" class="headerlink" title="环境准备部分"></a>环境准备部分</h2><blockquote>
+<p>因为以后每次提交项目都需要在代码托管平带，为以后打下好的基础，从这次实验开始练习掌握github</p>
 </blockquote>
-<p>相对定位的特点：</p>
-<ul>
-<li>元素开启相对定位以后，如果不设置偏移量元素不会发生任何变化</li>
-<li>相对定位是参照于元素在文档流中的位置进行定位的</li>
-<li>相对定位会提升元素的层级</li>
-<li>相对定位不会使元素脱离文档流</li>
-<li>相对定位不会改变元素性质，块还是块，行内还是行内</li>
-</ul>
-<p>偏移量（<code>offset</code>）：</p>
-<ul>
-<li><p>当元素开启了定位以后，可以通过偏移量设置元素位置</p>
-</li>
-<li><p>top</p>
-<ul>
-<li>定位元素和定位位置上边的距离（越大越向下移动）</li>
-</ul>
-</li>
-<li><p>bottom</p>
-<ul>
-<li>定位元素和定位位置下边的距离（越大越向上移动）</li>
-</ul>
-</li>
-<li><p>left</p>
-<ul>
-<li>定位元素和定位位置左边的距离（越大越向右移动）</li>
-</ul>
-</li>
-<li><p>right</p>
-<ul>
-<li>定位元素和定位位置右边的距离（越大越向左移动）</li>
-</ul>
-</li>
-</ul>
-<p><em>定位元素垂直方向的位置由<code>top</code>和<code>bottom</code>两个属性来控制，通常情况下我们只会使用其一（水平方向同理）</em></p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
-    <span class="token property">position</span><span class="token punctuation">:</span>relative<span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">/*开启定位*/</span>
-    <span class="token property">top</span><span class="token punctuation">:</span>-<span class="token number">200</span>px<span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">/*先向上移动*/</span>
-    <span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>         <span class="token comment" spellcheck="true">/*再向右移动*/</span>
-<span class="token punctuation">}</span>
+<p>首先为这次的项目新建一个仓库：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\3.png"></p>
+<p>在要提交的项目中右键选择git bash here，先本地提交：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\4.png"></p>
+<p>查看状态，远程连接（这里我之前已经连接过了），再推送到main上：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\5.png" alt="image-20231029202120279"></p>
+<p>可以在GitHub图形化界面上看到推送上来的文件：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\6.png" alt="image-20231029202430222"></p>
+<p>至此，已经做完了GitHub上的与准备工作。</p>
+<p>&lt;hr/</p>
+<blockquote>
+<p> 接下来，做搭建系统的软件上的准备</p>
+</blockquote>
+<p>根据要求下载相关软件（phpStudy等）</p>
+<p>用终端<code>vue ui</code>打开并创建项目，并安装相关插件：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\vue-ui.png" alt="vue-ui"></p>
+<p>安装相关依赖axios：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\7.png"></p>
+<p><strong>错误一</strong></p>
+<p>利用phpStudy，导入相关sql数据库（一开始我用的phpStudy2016，但是导不出来，终端闪退，后来修改路径，将mydb.sql文件移到桌面后，能够导出mydb文件夹，但内容为空，后续在网上查看教程，重新下载了phpStudy8.1）：</p>
+<p>（失败案例）</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\sql导入.png" alt="导入数据库"></p>
+<p>（成功案例）</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\导入成功.png" alt="导入数据库"></p>
+<p>命令行输入<code>npm install</code>安装依赖项，接着执行<code>node .\app.js</code>，运行api接口项目：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\api2.png" alt="api"></p>
+<p>下载接口测试工具Postman：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\postman.png"></p>
+<p>参考API接口文档进行操作，比如说，要请求login接口，需要填写API文档中有的参数：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\接口测试.png"></p>
+<p>服务器返回：</p>
+<pre class=" language-sql"><code class="language-sql">{
+    <span class="token string">"data"</span>: {
+        <span class="token string">"id"</span>: <span class="token number">500</span><span class="token punctuation">,</span>
+        <span class="token string">"rid"</span>: <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">"username"</span>: <span class="token string">"admin"</span><span class="token punctuation">,</span>
+        <span class="token string">"mobile"</span>: <span class="token string">"12345678"</span><span class="token punctuation">,</span>
+        <span class="token string">"email"</span>: <span class="token string">"adsfad@qq.com"</span><span class="token punctuation">,</span>
+        <span class="token string">"token"</span>: <span class="token string">"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjowLCJpYXQiOjE2OTg1NTc1ODQsImV4cCI6MTY5ODY0Mzk4NH0.2AQIyKy-gH8Uk2q9pVNlCqWB7kYLMQjDr9m1sNexSGU"</span>
+    }<span class="token punctuation">,</span>
+    <span class="token string">"meta"</span>: {
+        <span class="token string">"msg"</span>: <span class="token string">"登录成功"</span><span class="token punctuation">,</span>
+        <span class="token string">"status"</span>: <span class="token number">200</span>
+    }
+}
 </code></pre>
-<h3 id="1-2-绝对定位（absolute）"><a href="#1-2-绝对定位（absolute）" class="headerlink" title="1.2 绝对定位（absolute）"></a>1.2 绝对定位（absolute）</h3><blockquote>
-<p>当元素的position属性值设置为absolute时，则开启了元素的绝对定位</p>
+<h2 id="组件布局介绍"><a href="#组件布局介绍" class="headerlink" title="组件布局介绍"></a>组件布局介绍</h2><h3 id="1-登陆功能"><a href="#1-登陆功能" class="headerlink" title="1. 登陆功能"></a>1. 登陆功能</h3><h4 id="1-1-接口"><a href="#1-1-接口" class="headerlink" title="1.1 接口"></a>1.1 接口</h4><p>存在跨越问题，不能使用session和cookie。token值是由服务器生成的，每个用户的token值都不一样。</p>
+<p>![image-20231029133946724](E:\web\my_notebook\06_pics\屏幕截图 2023-10-29 133852.png)</p>
+<h4 id="1-2-实现"><a href="#1-2-实现" class="headerlink" title="1.2 实现"></a>1.2 实现</h4><blockquote>
+<p>通过使用Element-UI组件实现布局，需要用到el-form、el-form-item、el-input、el-button、字体图标。</p>
 </blockquote>
-<p>绝对定位特点：</p>
-<ul>
-<li>开启绝对定位后，如果不设置偏移量元素的位置不会发生变化</li>
-<li>开启绝对定位后，元素会从文档流中脱离</li>
-<li>绝对定位会改变元素性质，块变行内，块的宽高被内容撑开</li>
-<li>绝对定位会使元素提升一个层级</li>
-<li>绝对定位元素是相对于其<strong>包含块</strong>进行决定的</li>
-</ul>
-<p>包含块（containing block）：</p>
-<ul>
-<li><p>正常情况下</p>
-<ul>
-<li>包含块就是里当前元素最近的祖先<strong>块</strong>元素</li>
-</ul>
-</li>
-<li><p>绝对定位的包含块</p>
-<ul>
-<li>包含块就是<strong>离它最近</strong>的、<strong>开启了定位</strong>的祖先块元素</li>
-<li>如果所有祖先元素都没开启定位，则根元素（html，称初始包含块）就是它的包含块</li>
-</ul>
-</li>
-</ul>
-<h3 id="1-3-固定定位（fixed）"><a href="#1-3-固定定位（fixed）" class="headerlink" title="1.3 固定定位（fixed）"></a>1.3 固定定位（fixed）</h3><blockquote>
-<p>当元素的position属性值设置为fixed时，则开启了元素的固定定位，固定定位也是一种绝对定位，大部分特点与绝对定位一样</p>
+<p>用vscode打开工作目录，在每次实现新功能之前，可以先用<code>git status </code>来检查工作区是否干净，然后创建一个分支，将功能放在新的分支上开发，在开发完成以后，再将分支合并到main上。</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\创建分支.png" alt="新分支"></p>
+<h3 id="2-删除不要的组件"><a href="#2-删除不要的组件" class="headerlink" title="2. 删除不要的组件"></a>2. 删除不要的组件</h3><p>编译文件，并启动app查看效果：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\启动.png" alt="image-20231029135919681"></p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\页面.png" alt="image-20231029145258781"></p>
+<p><strong>错误二</strong></p>
+<p>问题一个接一个……还有解决vscode自动缩进问题，之前我下了一个JS-CSS-HTML Formatting的插件，这个插件会导致缩进自动变为4个空格，但代码要求是2个空格，就一直一直报错……后来发现是插件问题，卸载完插件，一定要一定要重新启动！！！</p>
+<p>删除一些不必要的组件，例如view文件夹、components内的HelloWorld.vue文件，以及一些其他代码中的不必要部分</p>
+<p>&lt;hr/</p>
+<blockquote>
+<p>电商项目到这里发现老师与我的环境装的不太一样，我是vue3，他是vue2，后续学着做可能会碰到其他很多环境bug，于是我又又又换了另一种方法来创建了一个新的myshop项目，这次在终端创建：</p>
 </blockquote>
-<p>固定定位与绝对定位的不同：</p>
-<ul>
-<li>固定定位永远参照于浏览器的<strong>视口</strong>（可视窗口，与html不同，html是网页）进行定位</li>
-<li>固定定位的元素不会随网页的滚动条滚动</li>
-</ul>
-<h3 id="1-4-粘滞定位（sticky）"><a href="#1-4-粘滞定位（sticky）" class="headerlink" title="1.4 粘滞定位（sticky）"></a>1.4 粘滞定位（sticky）</h3><blockquote>
-<p>当元素的position属性值设置为sticky时，则开启了元素的粘滞定位，粘滞定位与相对定位基本一致，兼容性差，<strong>只做了解</strong></p>
+<p>流程如下（但是多选了一个TS啊啊啊，结果又重新来了一次，没截上）：<img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\新项目.png"></p>
+<blockquote>
+<p>这样子我们以后可以在vue ui上图形化添加依赖，在终端可以创建项目，也还是很方便的（虽然终端好像就可以加依赖）</p>
 </blockquote>
-<p>粘滞定位与相对定位的不同：</p>
-<ul>
-<li>粘滞定位可以在元素到达某个位置时将其固定</li>
-</ul>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.nav</span></span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">1210</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">48</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#E8E7E3</span><span class="token punctuation">;</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">100</span>px auto<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/* 粘滞定位 */</span>
-    <span class="token property">position</span><span class="token punctuation">:</span> sticky<span class="token punctuation">;</span>
-    <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">1</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<h3 id="3-创建登录组件"><a href="#3-创建登录组件" class="headerlink" title="3.创建登录组件"></a>3.创建登录组件</h3><p>在components目录下创建一个Login.vue文件，</p>
+<p><strong>错误三</strong></p>
+<p>有可能遇到错误“Component name “index” should always be multi-word”，只需要找到.eslintrc.js文件，并向其中添加： ‘vue/multi-word-component-names’: ‘off’，但这只是治标不治本：</p>
+<pre class=" language-javascript"><code class="language-javascript">  rules<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'no-console'</span><span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'warn'</span> <span class="token punctuation">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+    <span class="token string">'no-debugger'</span><span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token string">'warn'</span> <span class="token punctuation">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// 关闭名称校验</span>
+    <span class="token string">'vue/multi-word-component-names'</span><span class="token punctuation">:</span> <span class="token string">'off'</span>
+  <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="1-5-绝对定位元素的位置"><a href="#1-5-绝对定位元素的位置" class="headerlink" title="1.5 绝对定位元素的位置"></a>1.5 绝对定位元素的位置</h3><blockquote>
-<p>**包含块的内容区宽度 = **</p>
-<p><strong>left + margin-left + border-left + padding-left + width + padding-right + border-right + margin-right + right</strong></p>
-<p>**含块的高度 = **</p>
-<p><strong>top + margin-top/bottom + padding-top/bottom  + border-top/bottom + height</strong></p>
+<p>因为本项目vue的版本是5x的，它对命名有一定要求，需要用大驼峰命名法</p>
+<blockquote>
+<p>大驼峰命名法：首字母需大写，其后的每个词的首字母都要大些</p>
 </blockquote>
-<p>当开启了绝对定位后，水平方向的布局等式就需要添加 left 和 right 两个值，此时规则与之前一样</p>
-<ul>
-<li><p>过度约束（9值加在一起不满足等式）时，如果九值中没有 auto ，则自动调整<code>right</code>值以使等式满足</p>
-</li>
-<li><p>如果有auto，则自动调整auto的值以使等式满足</p>
-<ul>
-<li>可以设auto的值：<ul>
-<li>margin、width、left、right</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>因为 left 和 right 的默认值是auto，所以如果不知道 left 和 right ，则等式不满足时，会自动调整这两个值</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/* 开启绝对定位 */</span>
-    <span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/*水平居中一定要设置right和left*/</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span> auto<span class="token punctuation">;</span>
-    <span class="token property">right</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">left</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<p>方法一：可以直接改名文件（login.vue=&gt;LoginView.vue）</p>
+<p>方法二：在vue.config.js文件中进行更改，此时页面不会报错</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> defineConfig <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@vue/cli-service'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  transpileDependencies<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment" spellcheck="true">// 关闭</span>
+  lintOnSave<span class="token punctuation">:</span><span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-</li>
-<li><p><strong>包含块的高度 = top + margin-top/bottom + padding-top/bottom  + border-top/bottom + height</strong></p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/* 开启绝对定位 */</span>
-    <span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/*垂直居中一定要设置right和left*/</span>
-    <span class="token property">top</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">bottom</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
-    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<p>为Login.vue填写内容：</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div>
+    登陆组件
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="less" scoped>
+
+</style>
 </code></pre>
-</li>
-<li><p>如果想要在正中心（既水平居中又垂直居中）</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box2</span></span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/* 开启绝对定位 */</span>
-    <span class="token property">position</span><span class="token punctuation">:</span>absolute<span class="token punctuation">;</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span> auto<span class="token punctuation">;</span>
-    <span class="token property">right</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">left</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">top</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">bottom</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span>auto<span class="token punctuation">;</span>
-    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<p>在router.js里面渲染Login组件：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Router <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
+<span class="token keyword">import</span> Login <span class="token keyword">from</span> <span class="token string">'./components/Login.vue'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Router<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/login'</span><span class="token punctuation">,</span> component<span class="token punctuation">:</span> Login <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-</li>
-</ul>
-<h3 id="1-6-元素的层级"><a href="#1-6-元素的层级" class="headerlink" title="1.6 元素的层级"></a>1.6 元素的层级</h3><p>对于开启定位的元素，可以通过<code>z-index</code>属性来指定元素层级，<code>z-index</code>需要一个整数作为参数</p>
-<ul>
-<li>值越大，元素的层级越高，层级越高，越优先显示</li>
-<li>如果元素层级一样，则优先显示靠下的元素</li>
-<li>祖先元素层级再高，也无法盖住后代元素</li>
-</ul>
-<h2 id="2-字体族"><a href="#2-字体族" class="headerlink" title="2. 字体族"></a>2. 字体族</h2><p><code>font-size</code></p>
-<ul>
-<li>和font-size相关单位<ul>
-<li>em 相当于当前元素的一个font-size</li>
-<li>rem 相当于根元素的一个font-size</li>
-</ul>
-</li>
-</ul>
-<p><code>font-family</code></p>
-<ul>
-<li>字体样式（格式）</li>
-<li>指定字体的类别，浏览器会自动使用该类别下的字体</li>
-<li>可选值<ul>
-<li>serif  衬线字体</li>
-<li>sans-serif  非衬线字体</li>
-<li>monospace  等宽字体</li>
-</ul>
-</li>
-<li>可以同时指定多个字体，多个字体间使用<code>,</code>隔开，字体生效时优先使用第一个，第一个无法使用则会使用第2个</li>
-</ul>
-<pre class=" language-css"><code class="language-css"><span class="token property">font-family</span><span class="token punctuation">:</span> serif,monospace,sans-serif<span class="token punctuation">;</span>
+<p>记得在App.vue中添加路由占位符：</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+  <div id="app">
+    App根组件
+    <!-- 路由占位符 -->
+    <router-view></router-view>
+  </div>
+</template>
+
+<style lang="less">
+</style>
 </code></pre>
-<h3 id="2-1-图标字体简介（iconfont）"><a href="#2-1-图标字体简介（iconfont）" class="headerlink" title="2.1 图标字体简介（iconfont）"></a>2.1 图标字体简介（iconfont）</h3><blockquote>
-<p>在网页中经常需要使用一些图标，可以通过图片来引入图标，但是图片本身比较大，非常不灵活，所以在使用图表示，我们还可以将图标直接设置为字体，然后通过font-face的形式来对字体进行引入，这样就可以直接字体的形式来使用图标</p>
+<p>运行界面可以看到：</p>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\1.png"></p>
+<p>重定向地址：若想将“/”的地址重定向到“/login”上，可以利用以下代码：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  routes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token comment" spellcheck="true">// 重定向</span>
+    <span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> redirect<span class="token punctuation">:</span> <span class="token string">'/login'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/login'</span><span class="token punctuation">,</span> component<span class="token punctuation">:</span> Login <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="3-1-登录样式"><a href="#3-1-登录样式" class="headerlink" title="3.1 登录样式"></a>3.1 登录样式</h4><blockquote>
+<p>样式多是css部分的的内容，展示成果与代码</p>
 </blockquote>
-<p>font awesome使用步骤：</p>
-<ul>
-<li>将css和webfonts移动到项目中</li>
-<li>将all.css引入到网页中 <code>&lt;link rel="stylesheet" href="./fa/css/all.css"&gt;</code></li>
-<li>使用图标字体<ul>
-<li>直接通过类名使用图标字体 <code>  &lt;i class="fas fa-bell"&gt;&lt;/i&gt;</code><ul>
-<li><strong>其中<code>fas</code>是固定的（或者<code>fab</code>），后面的<code>fa-bell</code>是目标图标的类</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Login.vue组件下（实现了登录界面的框架）</p>
+<pre class=" language-vue"><code class="language-vue"><template>
+<!-- 整个页面 -->
+  <div class="login_container">
+    <!-- 白色盒子 -->
+    <div class=box>
+      <!-- 头像部分 -->
+      <div class="avatar_box">
+        <img src="../assets/logo.png" alt="">
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="less" scoped>
+.login_container{
+  background-color: #2b4b6b;
+  height:100%;
+}
+.box{
+  height:300px;
+  width:450px;
+  background-color: #fff;
+  border-radius: 3px;
+  // 让盒子水平居中
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+
+  // 嵌套
+  .avatar_box{
+    height: 130px;
+    width: 130px;
+    border :1px solid #eee;
+    border-radius: 50%;
+    padding:10px;
+    box-shadow: 0 0 10px #ddd;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #eee;
+    }
+  }
+}
+</style>
+</code></pre>
+<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\2.png"></p>
 
                 
             </div>
@@ -729,7 +726,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://zhao4777.github.io/2023/10/20/web-css.position/">http://zhao4777.github.io/2023/10/20/web-css.position/</a>
+                    <a href="http://zhao4777.github.io/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/">http://zhao4777.github.io/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -771,8 +768,12 @@
                                     <span class="chip bg-color">Web</span>
                                 </a>
                             
-                                <a href="/tags/CSS/">
-                                    <span class="chip bg-color">CSS</span>
+                                <a href="/tags/Vue2-0/">
+                                    <span class="chip bg-color">Vue2.0</span>
+                                </a>
+                            
+                                <a href="/tags/Element-UI/">
+                                    <span class="chip bg-color">Element-UI</span>
                                 </a>
                             
                         </div>
@@ -816,29 +817,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/10/20/web-javascript/">
+                <a href="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Web_JavaScript">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="电商管理系统实战">
                         
-                        <span class="card-title">Web_JavaScript</span>
+                        <span class="card-title">电商管理系统实战</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文主要介绍JS的基础部分
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-10-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -847,6 +849,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -854,8 +857,12 @@
                         <span class="chip bg-color">Web</span>
                     </a>
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/Vue2-0/">
+                        <span class="chip bg-color">Vue2.0</span>
+                    </a>
+                    
+                    <a href="/tags/Element-UI/">
+                        <span class="chip bg-color">Element-UI</span>
                     </a>
                     
                 </div>
@@ -869,33 +876,29 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/10/20/web-css.float/">
+                <a href="/2023/10/22/mongodb-study-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Web_CSS">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="MongoDB_study_1">
                         
-                        <span class="card-title">Web_CSS</span>
+                        <span class="card-title">MongoDB_study_1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文主介绍CSS，重点在于盒子模型
+                            本文主要介绍MongoDB基础知识。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            z47
                             
                         </span>
                     </div>
@@ -903,12 +906,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Web/">
-                        <span class="chip bg-color">Web</span>
-                    </a>
-                    
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
+                    <a href="/tags/MongoDB/">
+                        <span class="chip bg-color">MongoDB</span>
                     </a>
                     
                 </div>
