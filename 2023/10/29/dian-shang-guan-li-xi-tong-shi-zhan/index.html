@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="47‘s Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="47‘s Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -496,35 +496,38 @@
 <p>因为以后每次提交项目都需要在代码托管平带，为以后打下好的基础，从这次实验开始练习掌握github</p>
 </blockquote>
 <p>首先为这次的项目新建一个仓库：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\3.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/3.png"></p>
 <p>在要提交的项目中右键选择git bash here，先本地提交：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\4.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/4.png"></p>
 <p>查看状态，远程连接（这里我之前已经连接过了），再推送到main上：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\5.png" alt="image-20231029202120279"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/5.png"></p>
 <p>可以在GitHub图形化界面上看到推送上来的文件：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\6.png" alt="image-20231029202430222"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/6.png"></p>
 <p>至此，已经做完了GitHub上的与准备工作。</p>
-<p>&lt;hr/</p>
+<hr>
+
+
+
 <blockquote>
 <p> 接下来，做搭建系统的软件上的准备</p>
 </blockquote>
 <p>根据要求下载相关软件（phpStudy等）</p>
 <p>用终端<code>vue ui</code>打开并创建项目，并安装相关插件：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\vue-ui.png" alt="vue-ui"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/vue-ui.png" alt="vue-ui"></p>
 <p>安装相关依赖axios：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\7.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/7.png"></p>
 <p><strong>错误一</strong></p>
 <p>利用phpStudy，导入相关sql数据库（一开始我用的phpStudy2016，但是导不出来，终端闪退，后来修改路径，将mydb.sql文件移到桌面后，能够导出mydb文件夹，但内容为空，后续在网上查看教程，重新下载了phpStudy8.1）：</p>
 <p>（失败案例）</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\sql导入.png" alt="导入数据库"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/sql%E5%AF%BC%E5%85%A5.png" alt="导入数据库"></p>
 <p>（成功案例）</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\导入成功.png" alt="导入数据库"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/%E5%AF%BC%E5%85%A5%E6%88%90%E5%8A%9F.png" alt="导入数据库"></p>
 <p>命令行输入<code>npm install</code>安装依赖项，接着执行<code>node .\app.js</code>，运行api接口项目：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\api2.png" alt="api"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/api2.png" alt="api"></p>
 <p>下载接口测试工具Postman：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\postman.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/postman.png"></p>
 <p>参考API接口文档进行操作，比如说，要请求login接口，需要填写API文档中有的参数：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\接口测试.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95.png"></p>
 <p>服务器返回：</p>
 <pre class=" language-sql"><code class="language-sql">{
     <span class="token string">"data"</span>: {
@@ -542,23 +545,24 @@
 }
 </code></pre>
 <h2 id="组件布局介绍"><a href="#组件布局介绍" class="headerlink" title="组件布局介绍"></a>组件布局介绍</h2><h3 id="1-登陆功能"><a href="#1-登陆功能" class="headerlink" title="1. 登陆功能"></a>1. 登陆功能</h3><h4 id="1-1-接口"><a href="#1-1-接口" class="headerlink" title="1.1 接口"></a>1.1 接口</h4><p>存在跨越问题，不能使用session和cookie。token值是由服务器生成的，每个用户的token值都不一样。</p>
-<p>![image-20231029133946724](E:\web\my_notebook\06_pics\屏幕截图 2023-10-29 133852.png)</p>
+<p><img src="/images/%E7%94%B5%E5%95%86/%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png"></p>
 <h4 id="1-2-实现"><a href="#1-2-实现" class="headerlink" title="1.2 实现"></a>1.2 实现</h4><blockquote>
 <p>通过使用Element-UI组件实现布局，需要用到el-form、el-form-item、el-input、el-button、字体图标。</p>
 </blockquote>
 <p>用vscode打开工作目录，在每次实现新功能之前，可以先用<code>git status </code>来检查工作区是否干净，然后创建一个分支，将功能放在新的分支上开发，在开发完成以后，再将分支合并到main上。</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\创建分支.png" alt="新分支"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF.png" alt="新分支"></p>
 <h3 id="2-删除不要的组件"><a href="#2-删除不要的组件" class="headerlink" title="2. 删除不要的组件"></a>2. 删除不要的组件</h3><p>编译文件，并启动app查看效果：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\启动.png" alt="image-20231029135919681"></p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\页面.png" alt="image-20231029145258781"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/%E5%90%AF%E5%8A%A8.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/%E9%A1%B5%E9%9D%A2.png"></p>
 <p><strong>错误二</strong></p>
 <p>问题一个接一个……还有解决vscode自动缩进问题，之前我下了一个JS-CSS-HTML Formatting的插件，这个插件会导致缩进自动变为4个空格，但代码要求是2个空格，就一直一直报错……后来发现是插件问题，卸载完插件，一定要一定要重新启动！！！</p>
 <p>删除一些不必要的组件，例如view文件夹、components内的HelloWorld.vue文件，以及一些其他代码中的不必要部分</p>
-<p>&lt;hr/</p>
+<hr>
+
 <blockquote>
 <p>电商项目到这里发现老师与我的环境装的不太一样，我是vue3，他是vue2，后续学着做可能会碰到其他很多环境bug，于是我又又又换了另一种方法来创建了一个新的myshop项目，这次在终端创建：</p>
 </blockquote>
-<p>流程如下（但是多选了一个TS啊啊啊，结果又重新来了一次，没截上）：<img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\新项目.png"></p>
+<p>流程如下（但是多选了一个TS啊啊啊，结果又重新来了一次，没截上）：<img src="/images/%E7%94%B5%E5%95%86/%E6%96%B0%E9%A1%B9%E7%9B%AE.png"></p>
 <blockquote>
 <p>这样子我们以后可以在vue ui上图形化添加依赖，在终端可以创建项目，也还是很方便的（虽然终端好像就可以加依赖）</p>
 </blockquote>
@@ -628,7 +632,7 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 </style>
 </code></pre>
 <p>运行界面可以看到：</p>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\1.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/1.png"></p>
 <p>重定向地址：若想将“/”的地址重定向到“/login”上，可以利用以下代码：</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   routes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
@@ -699,7 +703,7 @@ export default {
 }
 </style>
 </code></pre>
-<p><img src="/2023/10/29/dian-shang-guan-li-xi-tong-shi-zhan/web\my_notebook\06_pics\2.png"></p>
+<p><img src="/images/%E7%94%B5%E5%95%86/2.png"></p>
 
                 
             </div>
